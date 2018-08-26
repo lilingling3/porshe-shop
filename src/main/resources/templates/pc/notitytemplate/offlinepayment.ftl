@@ -1,0 +1,1 @@
+【保时捷中国】尊敬的${leads.lastName!}${leads.firstName!}先生/女士，感谢您的支持与喜爱，您已成功选择<#list leads.leadsDealers as p>${p.dealerName!}<#if p_index+1!=leads.leadsDealers?size>/</#if></#list>。稍后将有该中心的销售顾问与您联系，请保持手机畅通，期待您加入保时捷大家庭。（退订请回复 TD）

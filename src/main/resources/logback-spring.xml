@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="service.name" value="porsche-shop"/>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <property name="es.host" value="https://boldseas:boldseas_2016_es@es.boldseas.com"/>
+    <property name="es.type" value="test"/>
+    <springProfile name="prod">
+        <property name="es.host" value="http://elastic:boldseas_2016_es@172.16.104.31:9201"/>
+        <property name="es.type" value="prod"/>
+    </springProfile>
+    <appender name="LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/data/logs/porsche/${service.name}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/data/logs/porsche/${service.name}.%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %-20(%d{HH:mm:ss.SSS} [%thread]) %-5level %logger{80} %line - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+    <appender name="REQUEST_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/data/logs/porsche/request/${service.name}-request.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/data/logs/porsche/request/${service.name}-request.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %-20(%d{HH:mm:ss.SSS} [%thread]) %logger{80} - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+    <appender name="ELASTIC_LOG" class="com.internetitem.logback.elasticsearch.ElasticsearchAppender">
+        <url>${es.host}/_bulk</url>
+        <index>porsche-shop-logs-${es.type}-%date{yyyy-MM-dd}</index>
+        <type>${es.type}</type>
+        <loggerName>porsche-shop-logs</loggerName> <!-- optional -->
+        <errorLoggerName>porsche-shop-error-logs</errorLoggerName> <!-- optional -->
+        <connectTimeout>30000</connectTimeout> <!-- optional (in ms, default 30000) -->
+        <errorsToStderr>false</errorsToStderr> <!-- optional (default false) -->
+        <includeCallerData>false</includeCallerData> <!-- optional (default false) -->
+        <logsToStderr>false</logsToStderr> <!-- optional (default false) -->
+        <maxQueueSize>104857600</maxQueueSize> <!-- optional (default 104857600) -->
+        <maxRetries>3</maxRetries> <!-- optional (default 3) -->
+        <readTimeout>30000</readTimeout> <!-- optional (in ms, default 30000) -->
+        <sleepTime>250</sleepTime> <!-- optional (in ms, default 250) -->
+        <rawJsonMessage>false</rawJsonMessage> <!-- optional (default false) -->
+        <authentication class="com.internetitem.logback.elasticsearch.config.BasicAuthentication"/>
+        <properties>
+            <property>
+                <name>host</name>
+                <value>${HOSTNAME}</value>
+                <allowEmpty>false</allowEmpty>
+            </property>
+            <property>
+                <name>service</name>
+                <value>${service.name}</value>
+                <allowEmpty>false</allowEmpty>
+            </property>
+            <property>
+                <name>severity</name>
+                <value>%level</value>
+            </property>
+            <property>
+                <name>thread</name>
+                <value>%thread</value>
+            </property>
+            <property>
+                <name>stacktrace</name>
+                <value>%ex</value>
+            </property>
+            <property>
+                <name>logger</name>
+                <value>%logger</value>
+            </property>
+        </properties>
+        <headers>
+            <header>
+                <name>Content-Type</name>
+                <value>text/plain</value>
+            </header>
+        </headers>
+    </appender>
+    <logger name="ch.qos" level="WARN"/>
+    <logger name="porsche-shop-logs" level="WARN"/>
+    <logger name="springfox" level="WARN"/>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="LOG_FILE"/>
+        <appender-ref ref="ELASTIC_LOG"/>
+    </root>
+</configuration>

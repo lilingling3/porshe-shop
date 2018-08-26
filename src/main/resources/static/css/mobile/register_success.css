@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 14px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.registerSuccessWrap {
+    min-height: calc(100% - 4.1rem);
+}
+
+body {
+    background-color: #000;
+}
+
+.registerSuccessWrap .menu-wrap {
+    float: right;
+    margin-right: 0.483871rem;
+    line-height: 1.540323rem;
+    display: flex;
+    align-items: center;
+}
+
+.registerSuccessWrap .menu-wrap span {
+    display: inline-block;
+    margin: 0 0.483871rem;
+    width: 2px;
+    height: 0.725806rem;
+    color: #ccc;
+    background-color: #ccc;
+}
+
+.registerSuccessWrap header {
+    height: 1.529791rem;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.registerSuccessWrap .banner {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    /*overflow: hidden;*/
+    background-repeat: no-repeat;
+    padding-top: 6.561997rem;
+    box-sizing: border-box;
+    min-height: calc(100% - 4.1rem);
+}
+
+.registerSuccessWrap .subWrap {
+    height: 1.731079rem;
+    color: white;
+    width: 100%;
+    background: rgba(54, 54, 54, .8);
+    padding: .442834rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.registerSuccessWrap .content-wrap {
+    background: rgba(51, 51, 51, .9);
+    padding-bottom: .8rem;
+}
+
+.registerSuccessWrap .subText {
+    padding-top: .603865rem;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: white
+}
+
+.registerSuccessWrap .toOrderSubmit .payBtn {
+    width: 5rem;
+    height: 0.78905rem;
+    display: block;
+    margin: 2.254428rem auto 0;
+    background: #59b0c9;
+    font-size: 16px;
+    line-height: 0.83rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0.080515rem;;
+    color: white;
+    text-decoration: none;
+}
+
+.registerSuccessWrap .toOrderSubmit .payBtn img {
+    vertical-align: middle;
+    width: .644122rem;
+    display: inline-block;
+    font-size: 0;
+}
+
+.registerSuccessWrap .toOrderSubmit {
+    position: relative;
+    z-index: 99;
+}

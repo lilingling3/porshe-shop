@@ -1,0 +1,381 @@
+html {
+    min-width: 1306px;
+    min-height: 800px;
+}
+
+.account {
+    position: relative;
+}
+
+.account-box {
+    min-height: calc(100% - 252px);
+}
+
+.account-left {
+    width: 430px;
+    height: 100%;
+    float: left;
+    background: rgba(204, 204, 204, .0);
+}
+
+.account-title {
+    height: 80px;
+    background: #eff0f1;
+    line-height: 80px;
+    position: relative;
+}
+
+.account-icon {
+    height: 56px;
+    display: inline-block;
+    float: left;
+
+}
+
+.account-icon img {
+    width: 45px;
+    left: 30px;
+
+}
+
+.account-title p {
+    font-size: 24px;
+    padding-left: 85px;
+    display: inline-block;
+
+}
+
+.account-title .operate {
+    float: right;
+    position: relative;
+    left: -15px;
+}
+
+.account-title .operate span {
+    font-size: 14px;
+    background: #2d2d2d;
+    padding: 3px 12px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.person-info {
+    padding: 20px 30px;
+    font-size: 14px;
+
+}
+
+.person-show .person-info > div:first-child {
+    margin-bottom: 23px;
+}
+
+.person-info > div {
+    margin-bottom: 13px;
+}
+
+.person-info span, .person-info p {
+    min-height: 27px;
+    line-height: 27px;
+}
+
+.person-info span i {
+    color: #6eb1ca;
+    font-size: 14px;
+    font-style: normal;
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.person-info input {
+    height: 27px;
+    background-color: #eff0f1;
+    border-radius: 12px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 14px;
+    border: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*查看信息模式*/
+
+.person-edit .person-info .my-select p {
+    display: block;
+    border-radius: 12px;
+}
+
+.my-select p {
+    background: #eff0f1;
+}
+
+.my-select .select-option {
+    background-color: #fff;
+    border: 1px solid #eff0f1;
+}
+
+.person-edit .operate .edit, .person-edit .name-show {
+    display: none;
+}
+
+.person-show .operate .cancle, .person-show .my-select, .person-show .operate .save, .person-show input, .person-show select, .person-show .person-name .text-center, .person-show .address, .person-show .name-edit {
+    display: none;
+}
+
+.person-show .detail-address {
+    height: inherit;
+}
+
+.person-show span i {
+    opacity: 0;
+}
+
+.g-hid {
+    opacity: 0;
+}
+
+.person-edit .person-info p {
+    display: none;
+}
+
+.account-content {
+    width: calc(100% - 440px);
+    float: right;
+
+}
+
+.noOrder {
+    position: relative;
+    padding-right: 10px;
+}
+
+.noOrder img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.noOrder p {
+    font-size: 16px;
+    line-height: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: 6.5%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 150px;
+    padding: 0 4px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    bottom: -13px;
+    background: #2cb3cc;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #2cb3cc;
+}
+
+.btn:hover {
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.noOrder .btn {
+    right: 30px;
+}
+
+.hid {
+    display: none;
+}
+
+.my-order {
+    padding-top: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.my-order .order .btn {
+    right: 0px;
+    bottom: -3px
+}
+
+.my-order .order {
+    margin-bottom: 10px;
+}
+
+.order-pic {
+    position: relative;
+    font-size: 16px;
+}
+
+.order-pic img {
+    width: 100%;
+}
+
+.order-pic p {
+    position: absolute;
+    left: 0px;
+    bottom: 1.5%;
+
+    color: #fff;
+}
+
+.info-title {
+    background: #eff0f1;
+    padding-left: 20px;
+    font-size: 14px;
+    height: 60px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.info-title p {
+    height: 22px;
+    line-height: 22px;
+}
+
+.info > p {
+    line-height: 26px;
+}
+
+.order-info .info {
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+.order-info .info p span:first-child {
+    margin-right: 19px;
+    display: inline-block;
+}
+
+.order-statu {
+    position: absolute;
+    padding: 20px 0;
+    border-top: 2px solid #000;
+    width: calc(41% - 36px);
+    right: 20px;
+    bottom: 0px
+
+}
+
+.order-statu p {
+    font-weight: bold;
+    position: relative;
+}
+
+.order {
+    position: relative;
+}
+
+.order .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, .4);
+    z-index: 1000
+
+}
+
+.agreement-btn {
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    background: #2cb3cc;
+    border-radius: 5px;
+    padding: 2px 12px;
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.account-left .error {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.p-center {
+    width: calc(100% - 107px);
+    display: inline-block;
+    float: right;
+    position: relative;
+    left: -1px;
+}
+
+.dialog-content {
+    padding: 30px 15px;
+    box-sizing: border-box;
+    width: 364px;
+}
+
+.dialog-title {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.commonInput .btn {
+    color: #fff;
+    padding: 0 24px;
+    font-size: 14px;
+    width: inherit;
+    min-width: inherit;
+    position: relative;
+    bottom: 0;
+    height: 28px;
+    line-height: 28px;
+    box-sizing: inherit;
+}
+
+.commonInput .btn:hover {
+    color: #2cb3cc;
+}
+
+.footer-mask {
+    padding: 10px 0;
+    background: #ededed;
+    border-radius: 0 0 5px 5px;
+}
+
+.footer-mask span:first-child {
+    margin-right: 30px;
+}
+
+.footer-mask span:last-child {
+    margin-left: 30px;
+}
+
+.delete {
+    float: right;
+    position: relative;
+    right: 170px;
+    cursor: pointer;
+}
+
+.commonInput {
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1002;
+}
+
+.person-info .select-value {
+    height: 27px;
+    line-height: 27px;
+}

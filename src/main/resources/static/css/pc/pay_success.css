@@ -1,0 +1,198 @@
+
+#pay_success .wanshan {
+    padding: 20px 0 20px 30px;
+    display: table;
+    /*background: yellow;*/
+    margin: 0 auto;
+    background: rgba(45, 45, 45, .2);
+}
+
+#pay_success .border_left {
+    width: 10%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#pay_success .wan_info {
+    padding-left: 20px;
+    width: 80%;
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#pay_success .xinxi {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#pay_success .orderbox {
+    height: auto;
+    margin: 20px auto;
+    width: 90%;
+    margin-left: 40px;
+}
+
+#pay_success .blue_round {
+    height: 250px;
+    -webkit-animation: heightSlide 2s linear;
+    border-radius: 3px;
+    background-size:28px ;
+    background-repeat: no-repeat;
+    background-position: 0 14px;
+}
+
+#pay_success .onetab {
+    width: 96%;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    font-size: 14px;
+}
+
+#pay_success .tabnum {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background: #36b3ca;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#pay_success .username {
+    display: table;
+    margin-bottom: 30px;
+}
+
+#pay_success .userbox {
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+#pay_success .muststar {
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+    color: #36b3ca;
+    font-size: 20px;
+}
+
+#pay_success .iteminfo {
+    width: 85px;
+    font-size: 14px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+#pay_success .user_input {
+    margin-left: 8px;
+    border-radius: 16px;
+    border: none;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+    width: 234px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#pay_success .user_select {
+    margin-left: 8px;
+    width: 116px;
+    border: 1px solid #bdbdbd;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 16px;
+}
+
+#pay_success .address {
+    clear: both;
+    width: 285px;
+    margin-left: 110px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#pay_success .tiptap {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+#pay_success .tiptap img {
+    width: 24px;
+    margin-left: 8px;
+}
+
+#pay_success .yixiangjin {
+    margin-left: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+#pay_success .xiadan_btn {
+    margin-left: 8px;
+    width: 116px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: white;
+    background: #36b3ca;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+}
+
+#pay_success .successText {
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+#pay_success .successText p:nth-of-type(1) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 14px;
+    position: relative;
+    left: -40px;
+}
+
+#pay_success .successText p:nth-of-type(2), #pay_success .successText p:nth-of-type(3), #pay_success .successText p:nth-of-type(4) {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 75px;
+}
+
+#pay_success .successText a {
+    width: 190px;
+    margin: 40px auto 0px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: #36b3ca;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 2px #36b3ca;
+    font-size: 20px;
+    position: relative;
+    left: -30px;
+}
+
+#pay_success .successText a:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+

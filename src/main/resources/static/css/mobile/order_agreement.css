@@ -1,0 +1,148 @@
+html, body {
+    width: 100%;
+    background: #000;
+}
+
+header {
+    height: 1.540323rem;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.wrapper {
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 13.217742rem;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding-top: 3.478261rem;
+    box-sizing: border-box;
+}
+
+.content {
+    color: #fff;
+    background: rgba(54, 54, 54, .5);
+    overflow: hidden;
+}
+
+.line {
+    margin: 0.644122rem 0.354267rem 0 0.571659rem;
+}
+
+
+.line img {
+    width: 10px;
+    position: absolute;
+    right: -10px;
+    top: 4px;
+}
+
+.detail-box ::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 7px;
+    height: 0.724638rem;
+    background-color: #59b0c8;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.detail-box ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #2d2d2d;
+}
+
+/*定义滑块 内阴影+圆角*/
+.detail-box ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #59b0c8;;
+}
+
+.detail-box {
+    margin: 0.644122rem 0.354267rem 0 0;
+
+}
+
+.detail-box > h1 {
+    font-size: 18px;
+    padding-left: 1.400966rem;
+}
+
+.detail {
+    margin-top: 0.515298rem;
+    font-size: 12px;
+    /*height: 50%;*/
+    height: 4.830918rem;
+    overflow-y: auto;
+    padding-left: 1.400966rem;
+}
+
+.detail h1 {
+    font-size: 14px;
+    line-height: 0.644122rem;
+    margin-bottom: 0.193237rem;
+    margin-top: 0.322061rem;
+}
+
+.btn-box {
+    color: #fff;
+    text-align: center;
+    margin: 0.8rem 0 0.2rem 0;
+}
+
+.btn-box .btn {
+    width: inherit;
+    padding: 0 0.724638rem;
+}
+
+.grey-btn .btn {
+    background-color: #2d2d2d;
+}
+
+.agree-btn .btn {
+    background-color: #36b3ca;
+}
+
+.warn {
+    text-align: center;
+    font-size: 14px;
+    color: #55b0ca;
+    margin-bottom: 10px;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .btn-box {
+        color: #fff;
+        text-align: center;
+        margin: 0.3rem 0;
+    }
+}
+
+.line h1 > i {
+    width: calc(100% - 176px - 0.273752rem);
+}
+
+.list p {
+    padding-left: 30px;
+}
+
+.list section {
+    padding-left: 30px;
+    margin: 0.44122rem 0;
+
+}
+
+.list {
+    padding: 0.44122rem 0 0.44122rem 1.400966rem;
+    font-family: 'Porsche-Bold', '黑体', '华文黑体', 'SimHei', '华文黑体', 'STHeiti', '宋体', 'SimSun', sans-serif;
+}
+
+
+.list h1 i {
+    font-style: normal;
+    padding-right: 8px;
+}

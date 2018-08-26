@@ -1,0 +1,44 @@
+#register-success .subscription_icon{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    padding: 180px 0 20px 0;
+}
+
+#register-success .orderInfo p{
+    text-align: center;
+    line-height:25px;
+    font-size: 20px;
+}
+
+#register-success .payBtn img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+
+
+#register-success .payBtn{
+    display: block;
+    width: 210px;
+    height: 36px;
+    line-height: 36px;
+    background: #36b3ca;
+    border-radius: 5px;
+    margin: 180px auto 0;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 2px #36b3ca;
+    font-size: 20px;
+}
+
+#register-success .payBtn:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#register-success .btnText{
+    position: relative;
+    left: 5px;
+}

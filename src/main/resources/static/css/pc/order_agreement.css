@@ -1,0 +1,209 @@
+#order_agreement .arrival-title {
+    padding: 20px 20px 10px;
+    background: rgba(66, 63, 58, .7);
+    box-sizing: border-box;
+    position: relative;
+}
+
+#order_agreement .arrival-icon {
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    position: absolute;
+    top: 20px;
+}
+
+#order_agreement .arrival-icon img {
+    width: 40px;
+}
+
+#order_agreement .arrival-title p:nth-of-type(1) {
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#order_agreement .arrival-title p:nth-of-type(2) {
+    font-size: 14px;
+    margin: 0 60px 10px 60px;
+}
+
+#order_agreement .timezone {
+    width: 28px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    margin-top: 50px;
+    margin-left: 28px;
+    border-radius: 3px;
+    position: relative;
+}
+
+#order_agreement .timezone:after {
+    content: '';
+    width: 100px;
+    color: #fff;
+    position: absolute;
+    margin-left: -35px;
+    bottom: -30px;
+}
+
+#order_agreement .timezone .time {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 5px;
+
+}
+
+#order_agreement .timezone .time > span {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
+#order_agreement .timezone .time > div {
+    position: absolute;
+    margin-left: 35px;
+    width: 370px;
+}
+
+#order_agreement .timezone .time > div p {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+#order_agreement .dealer-box {
+    width: calc(100% - 500px);
+    height: 100%;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    background: rgba(0, 0, 0, .8);
+    z-index: 10;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 60px 60px 60px 40px;
+}
+
+#order_agreement .agreement {
+    padding-top: 50px;
+}
+
+#order_agreement .agreement img {
+    width: 10px;
+    vertical-align: middle;
+}
+
+#order_agreement .agreementWrap p {
+    font-size: 14px;
+}
+#order_agreement .agreementWrap li p:nth-of-type(1) {
+    font-size: 15px;
+}
+#order_agreement .agreementWrap ul li {
+    padding-bottom: 20px;
+}
+#order_agreement .agreementWrap ul li:last-child{
+    padding-bottom: 0
+}
+#order_agreement .agreementBtn {
+    display: block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px auto 0;
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    cursor: pointer;
+}
+
+#order_agreement .agreeBtn {
+    background: #36b3ca;
+    border:2px solid #36b3ca;
+
+}
+#order_agreement .agreeBtn:hover{
+    background: rgba(0,0,0,0);
+}
+
+#order_agreement .grayBtn {
+    background: rgb(78, 76, 76);
+    border:2px solid rgb(78, 76, 76);
+
+}
+/*自定义滚动条？兼容性*/
+#order_agreement .agreementWrap {
+    height: 330px;
+    overflow-y: auto;
+    margin-top: 30px;
+    padding:10px 50px 10px 0;
+}
+
+#order_agreement .dealer-box ::-webkit-scrollbar {
+    border-radius: 10px;
+    /*width对垂直有效*/
+    width: 7px;
+    /*height对水平有效*/
+    /*height: 0.724638rem;*/
+    background-color: #59b0c8;
+    height: auto;
+}
+.dealer-box {
+    scrollbar-arrow-color: #59b0c8; /**//*三角箭头的颜色*/
+    scrollbar-face-color: #59b0c8; /**//*立体滚动条的颜色*/
+    scrollbar-3dlight-color: #2d2d2d; /**//*立体滚动条亮边的颜色*/
+    scrollbar-highlight-color: #2d2d2d; /**//*滚动条空白部分的颜色*/
+    scrollbar-shadow-color: #2d2d2d; /**//*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color: #2d2d2d; /**//*立体滚动条强阴影的颜色*/
+    scrollbar-track-color: #2d2d2d; /**//*立体滚动条背景颜色*/
+    scrollbar-base-color: #f8f8f8; /**//*滚动条的基本颜色*/
+}
+#order_agreement .dealer-box ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #2d2d2d;
+}
+
+#order_agreement .dealer-box ::-webkit-scrollbar-thumb {
+    /*height: 10px;*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #59b0c8;;
+}
+
+#order_agreement .showSpan{
+    display: block;text-align: center;margin-top: 10px;color: #36b3ca;
+}
+
+
+
+
+.list section{
+    padding-left:34px;
+    margin:24px 0;
+
+}
+.list h1 {
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.list p{
+    padding-left: 34px;
+}
+
+.list h1 i {
+    font-style: normal;
+    padding-right: 8px;
+}

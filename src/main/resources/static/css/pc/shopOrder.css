@@ -1,0 +1,256 @@
+.arrival-title {
+    padding: 10px 34px;
+    background: rgba(66, 63, 58, .7);
+}
+
+.arrival-icon {
+    height: 73px;
+    line-height: 73px;
+    display: inline-block;
+    float: left;
+    position: relative;
+
+}
+
+.shop-order .content-box {
+    background-color: rgba(67, 72, 73, .8);
+}
+
+.arrival-icon img {
+    width: 40px;
+
+}
+
+.snowflakes {
+    color: #59b0c9;
+    padding-right: 3px;
+    font-style: normal;
+
+}
+
+.arrival-title p {
+    padding-left: 60px;
+}
+
+.arrival-title p:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.arrival-title p:nth-of-type(2) {
+    font-size: 14px;
+}
+
+.timezone {
+    width: 28px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    margin-top: 40px;
+    margin-left: 28px;
+    border-radius: 3px;
+    position: relative;
+}
+
+@-webkit-keyframes heightSlide {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 350px;
+    }
+}
+
+.arrival-box {
+    width: 500px;
+}
+
+.timezone:after {
+    content: '';
+    width: 100px;
+    color: #fff;
+    position: absolute;
+    margin-left: -37px;
+    bottom: -30px;
+}
+
+.timezone .time {
+    position: absolute;
+    margin-top: 6px;
+}
+
+.timezone .time > span {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
+.timezone .time > div {
+    position: absolute;
+    margin-left: 35px;
+    width: 400px;
+}
+
+.timezone .time > div > p {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+@-webkit-keyframes showIn {
+    0%, 70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dealer-section {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.dealer-section span i, .warn-info i {
+    color: #6eb1ca;
+    font-size: 14px;
+    font-style: normal;
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.dealer-section > div {
+    position: relative;;
+    left: -10px;
+    margin-top: 20px;
+}
+
+.dealer-section div span {
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.dealer-section .my-select {
+    width: 230px;
+    top: 10px;
+    left: 6px;
+}
+
+.dealer-box {
+    width: 352px;
+    height: 100%;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    background: rgba(0, 0, 0, .9);
+    z-index: 10;
+    color: #fff;
+    padding: 34px 34px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+.dealer-box ul {
+    margin-top: 36px;
+}
+
+
+.dealer-option p:last-child {
+    padding-left: 20px;
+    font-size: 12px;
+
+}
+
+.dealer-box ul li {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.dealer-box > div {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.login-btn {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-btn span {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    bottom: -13px;
+    background: #36b3ca;
+    text-align: center;
+    font-size: 22px;
+    box-sizing: border-box;
+    border: 2px solid #36b3ca;
+
+}
+
+.login-btn span:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.warn-info {
+    margin-top: 68px;
+}
+
+.warn-info i {
+    font-size: 16px;
+    width: 20px;
+
+}
+
+.warn-info span {
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+    width: calc(100% - 20px);
+    color: #ccc;
+
+}
+
+.dealer-box ::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 7px;
+    height: 0.724638rem;
+    background-color: #59b0c8;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.dealer-box ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #2d2d2d;
+}
+
+/*定义滑块 内阴影+圆角*/
+.dealer-box ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #59b0c8;;
+}
+
+.province .select-option {
+    z-index: 9;
+}
+
+.city .select-value {
+    z-index: 8;
+}
+
+.error-msg {
+    padding-left: 20px;
+}
+
+.my-select .select-value span:first-child {
+    color: #6a6a6a;
+}

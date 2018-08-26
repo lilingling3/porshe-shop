@@ -1,0 +1,146 @@
+html {
+    min-width: 1230px;
+
+}
+
+.back {
+    width: 100%;
+    height: 46px;
+    background-color: #eef0f1;
+    line-height: 46px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.back p {
+    width: 1180px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 24px;
+    z-index: 1;
+}
+
+.back img {
+    width: 8px;
+    margin-right: 4px;
+    margin-top: -3px;
+}
+
+.wrapper {
+    margin: 0px auto;
+    padding: 50px;
+    position: relative;
+    width: 1130px;
+
+}
+
+.wrapper .title {
+    font-size: 24px;
+    margin-bottom: 10px
+}
+
+.refund-list p {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+}
+
+.refund-list p span, .other-refund span {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.other-refund {
+    position: relative;
+}
+
+.initiate-refund {
+    height: 100%;
+}
+
+.initiate-refund-box {
+    position: relative;
+    min-height: calc(100% - 252px);
+    height:820px;
+}
+
+input {
+
+    padding: 0 10px;
+    border-left: none;
+    background: rgba(0, 0, 0, 0);
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #000;
+}
+
+.other-refund textarea {
+    width: calc(100% - 150px);
+    border:2px solid #ccc;
+    background-color: rgba(0,0,0,0);
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 14px;
+    resize: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 6px;
+    overflow: auto;
+
+}
+
+.operate {
+    margin-top: 30px;
+}
+
+.operate span {
+    margin-right: 40px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 152px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    background-color: #36b3ca;
+    border-radius: 5px;
+    border: 2px solid #36b3ca;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.btn:hover {
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bg {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    min-width: 1230px;
+    z-index: -1;
+
+}
+
+.hid {
+    display: none;
+}
+
+.error {
+    padding-left: 40px;
+    position: relative;
+    top:15px;
+    /*padding-top: 20px;*/
+}
+
+.refund-list  .bingo{
+    top: 2px;
+}

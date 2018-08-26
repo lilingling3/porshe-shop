@@ -1,0 +1,275 @@
+
+.orderWrap select {appearance:none;-moz-appearance:none;-webkit-appearance:none;padding-right: 14px;}
+.orderWrap select::-ms-expand { display: none; }
+.orderWrap .selectDown{
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 8px;
+    position: relative;
+    left: -30px;
+    background-size: 100% 100%;
+}
+.orderWrap{width: 100%;font-size: 14px}
+.orderWrap input,.orderWrap select{
+    font-size: 14px;padding-left: 10px;box-sizing: border-box;
+}
+
+.orderWrap input{
+    padding-right: 10px;
+    color: black;
+}
+.orderInfoCenter{margin: 0 auto;box-sizing: border-box;width: 400px;}
+.orderInfoHeader{
+    position: relative;
+    height: 110px;
+    width: 400px;
+    margin: 0 auto;
+}
+.orderInfoHeader span{display: inline-block;}
+.orderInfoHeader .icon{width: 41px;height: 50px;position: absolute;top: 25px;left: 2px;}
+.orderInfoHeader span:nth-of-type(1){position: absolute;font-size: 20px;font-weight: bold; left: 70px;top: 15px;}
+.orderInfoHeader span:nth-of-type(2){position: absolute;top: 55px;font-size: 14px;line-height: 17px;left: 70px;}
+.star{position: relative;top: 3px;left: -3px;}
+.starColor{color: #28aac6;}
+.orderInfoForm{
+    background: rgba(115, 114, 120, 0.3);
+    padding-top: 60px;
+    width: 100%;
+    height: calc(100% - 110px);
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+.orderInfoCenter .infoCall{
+    width: 279px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    height:31px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+.orderInfoCenter .adressInfo{
+    width: 133px;border-radius: 14px;
+    height: 31px;background: #fff;font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.orderInfoCenter .infoName{width: 114px;border: none;border-radius: 14px;height: 31px;background: #fff;padding-left: 10px;box-sizing: border-box}
+.orderInfoCenter .email{width: 279px;border-radius: 14px;border: none;height: 32px}
+.orderInfoCenter .adressDetail{margin-top: 20px;}
+.orderInfoCenter .spaceLine{padding: 10px 0}
+.orderInfoCenter .info{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #28aac6;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5px;
+}
+.orderInfoCenter .subscriptionSubmit a:nth-of-type(1){
+    margin-left: 18px;
+    display: block;
+    margin: 0 auto;
+}
+.orderInfoCenter .subscriptionSubmit a:nth-of-type(2){margin-left: 10px}
+
+.orderInfoCenter .reservationSubmit a {
+    display: block;
+    cursor: pointer;
+}
+.orderInfoCenter .reservationSubmit .payOnline{
+    width: 162px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #28aac6;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: solid 2px #36b3ca;
+    font-size: 20px;
+}
+.orderInfoCenter .reservationSubmit .payOnline:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.orderInfoCenter .shopOrderD{
+    text-decoration: underline;
+    display: inline-block!important;
+}
+
+
+
+.orderWrap .error-msg {
+    font-style: normal;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    color:red;
+}
+
+.orderWrap .tip_mission_idot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    left: 370px;
+    background: #27adc7;
+    top: 2px;
+}
+
+
+.orderWrap .adress_mission,.orderWrap  .tip_mission{
+    position: absolute;
+    bottom: 45px;
+    font-size: 14px;
+    z-index: 999999;
+    color: white;
+    width: 220px;
+    height: 25px;
+    line-height: 25px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    left: 205px;
+    text-align: center;
+    background: #27adc7;
+    border-radius: 10px;
+
+}
+
+.orderWrap .adress_mission_idot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    left: 372px;
+    background: #27adc7;
+    bottom: 42px;
+}
+
+.orderWrap .colorRed{
+    color:red;
+}
+.orderWrap .colorRed a{
+    color: red;
+}
+
+.orderWrap .order-mask{
+    height: auto;
+    width: 380px;
+}
+.orderWrap .order-mask p:nth-of-type(1){
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.orderWrap .order-mask p:nth-of-type(2){
+    padding: 0 0px 30px 10px;
+    text-align: left;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.orderWrap .order-mask .order-mask-footer{
+    background: #ededed;
+    padding: 10px 0;
+    border-radius: 0 0 3px 3px;
+}
+
+.orderWrap .order-mask .order-mask-footer .seeMyOrder{
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: #36b3ca;
+    border-radius: 5px;
+    color: white;
+    border: solid 2px #36b3ca;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.orderWrap .order-mask .order-mask-footer .seeMyOrder:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*=============btn==========================*/
+
+.btnSelf {
+    width: 162px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #36b3ca;
+    border-radius: 5px;
+    border: solid 2px #36b3ca;
+    box-sizing: border-box;
+}
+.missionBtn{
+    width: 180px;
+}
+
+.btnSelf:hover {
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+    cursor:pointer
+}
+.fontColor{
+    color: black;
+    font-size: 14px;
+}
+
+.orderWrap  .registerMsg{
+    padding-top: 10px;
+    color: red;
+    margin-left: 8px;
+}
+.orderWrap .errDone{
+    opacity: 0;
+    padding-top: 10px;
+    color: red;
+    margin-left: 8px;
+    min-height: 20px;
+}
+.mask-item .title-plicy{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.orderInfoForm .circle {
+    top: 2px;
+    left: -2px;
+    position: relative;
+}
+
+.orderInfoForm .bingo {
+    left: 7px;
+    top: 12px;
+}
+
+

@@ -1,0 +1,91 @@
+
+#question .back{
+    background-color: #eef0f1;
+    height: 1.441224rem;
+    line-height: 1.441224rem;
+    padding-left: 0.7rem;
+    font-size: 14px;
+}
+
+#question .questionsWrap{
+    width: 95%;
+    margin: 0 auto;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+#question .numberW{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #a9d0d8;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    color: #28aac6;
+    box-sizing: border-box;
+}
+
+
+#question .leftW{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 30px;
+}
+
+#question .twoLine{
+    position: relative;
+    left: 30px;
+    padding-top: 10px;
+    width: 95%;
+}
+
+#question ul li{
+    padding: .805153rem 0;
+    border: 1px solid #e4e4e4;
+    border-left: 0;
+    border-right: 0;
+}
+
+#question ul li:first-child{
+    border-top: none;
+}
+
+
+#question ul li:last-child{
+    border-bottom: none;
+}
+
+.specialPosition{
+    z-index: 1001;
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    transition: transform .5s;
+}
+.questionBoxTrans{
+    transform: translateX(100%);
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    transition: transform .5s;
+}
+.questionBox .questionLi{
+    height: 1.529791rem;
+    line-height: 1.529791rem;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center left;
+    font-size: 18px;
+    margin: 0 1.014493rem;
+}
+.specialPosition .questionsLine{
+    font-weight: 700;
+    display: inline-block;
+    width: calc(100% - 25px);
+    position: absolute;
+    top: 0;
+    left: 30px;
+}

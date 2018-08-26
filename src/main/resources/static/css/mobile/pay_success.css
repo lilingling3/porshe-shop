@@ -1,0 +1,148 @@
+.paySuccessWrap {
+    min-height: calc(100% - 4.1rem);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.paySuccessWrap .banner {
+    width: 100%;
+    margin-top: 3.4219rem;
+}
+
+.paySuccessWrap .subscriptionTitle {
+    /*height: .169082rem;*/
+    padding: .402576rem 0;
+    color: white;
+    display: table;
+    width: 100%;
+    /*background:  rgba(115, 114, 120, 0.5);*/
+    background: rgba(54,54,54,.8);
+}
+
+.paySuccessWrap .leftInfo {
+    width: 1.288245rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.paySuccessWrap .subscriptionTitle img {
+    width: .644122rem;
+    height: .724638rem;
+    left: .402576rem;
+    display: inline-block;
+
+}
+
+.paySuccessWrap .rightInfo {
+    display: table-cell;
+    width: 6.247987rem;
+    vertical-align: middle
+}
+
+.paySuccessWrap .rightInfo span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.paySuccessWrap .rightInfo span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+}
+
+
+.paySuccessWrap .flowIdot {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    padding-left: 34px;
+}
+
+
+.successContent .flowLine {
+    font-size: 14px;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-size: 6px;
+    background-position: center;
+    position: relative;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+.successContent {
+    background: rgba(51, 51, 51, 0.5);
+    padding-top: .402576rem;
+    min-height: calc(100% - 4.58rem - 31px);
+}
+
+.successContent .line .dot {
+    margin-right: 0.273752rem;
+}
+
+.successContent .line img {
+    width: 10px;
+    position: absolute;
+    right: -10px;
+    top: 4px;
+}
+
+.successContent .agreementHeader {
+    position: relative;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.successContent .successInfo {
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    width: 7.793881rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.690821rem;
+}
+
+.successContent .successInfo .detaiInfo {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 1.288245rem;
+    margin-left: 26px;
+}
+@media screen and (device-width: 320px) and (device-height: 568px){
+    .successContent .successInfo .detaiInfo{
+        padding-left: 1rem;
+    }
+}
+
+
+.successContent .successInfo a {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    height: .805153rem;
+    padding:0 10px;
+    text-align: center;
+    line-height: .805153rem;
+    border-radius: 0.080515rem;
+    background: #59b0c9;
+    text-decoration: none;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px){
+    .successContent .successInfo a{
+        margin: 1rem 0;
+    }
+}
+
+html,body{
+    background: black;
+}

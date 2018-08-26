@@ -1,0 +1,319 @@
+html, body {
+    background: black;
+}
+[v-cloak]{
+    display: none;
+}
+.generateWrap {
+    min-height: calc(100% - 4.1rem);
+    color: white;
+}
+
+.generateWrap .banner {
+    width: 100%;
+    height: 100%;
+    /* background-size: contain; */
+    background-size: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding-top: 3.4219rem;
+}
+
+.generateWrap .subscriptionTitle {
+    height: .169082rem;
+    padding: .402576rem 0;
+    color: white;
+    display: table;
+    width: 100%;
+    background: rgba(54, 54, 54, .8);
+}
+
+
+.generateWrap .leftInfo {
+    width: 1.288245rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.generateWrap .subscriptionTitle img {
+    width: .644122rem;
+    height: .724638rem;
+    left: .402576rem;
+    display: inline-block;
+
+}
+
+.generateWrap .rightInfo {
+    display: table-cell;
+    width: 6.247987rem;
+    vertical-align: middle
+}
+
+.generateWrap .rightInfo span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.generateWrap .rightInfo span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 14px;
+    width: 310px;
+}
+
+
+
+.generateWrap .agreementConent .agreementHeader {
+    position: relative;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+
+.generateWrap .agreementConent .rightArrow {
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+    vertical-align: middle;
+}
+
+
+
+.generateWrap .agreementConent .flowIdot {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+
+.generateWrap .agreementConent .flowLine {
+    font-size: 14px;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-size: 6px;
+    background-position: center;
+    position: relative;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+.generateWrap .agreementConent .long {
+    width: 4.3rem;
+    margin-left: 168px;
+    display: inline-block;
+    vertical-align: middle;
+    right: .016103rem;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .generateWrap .agreementConent .long {
+        width: 3.35rem;
+    }
+}
+@media screen and (device-width: 414px) and (device-height: 736px) {
+    .generateWrap .agreementConent .long{
+        width: 4.8rem;
+    }
+}
+
+.generateWrap .agreementConent {
+    background: rgba(51, 51, 51, .5);
+    padding-top: .402576rem;
+    padding-bottom: .6rem;
+}
+
+.generateWrap .titleSmall {
+    position: absolute;
+    top: 25px;
+    font-size: 11px;
+    left: 1.3rem;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .generateWrap .titleSmall {
+        font-size: 12px;
+        left: 0;
+    }
+}
+
+
+.generateWrap .buyCarInfo {
+    padding-top: .8rem;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .generateWrap .buyCarInfo {
+        width: 80%
+    }
+}
+
+.generateWrap .spaceLine {
+    height: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.generateWrap .buyCarInfo .star ,.areaLable .areaStar{
+    float: left;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #59b0c9
+}
+
+.buyCarInfo label {
+    width: 84px;
+     float: left;
+    line-height: 15px;
+}
+
+.generateWrap .usernameLable span {
+    display: inline-block;
+}
+
+.generateWrap .usernameInput{
+    display: inline-block;
+    width: calc(100% - 88px);
+    float: left;
+    margin-left: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    height: .724638rem;
+    border-radius: 12px;
+    border: none;
+    padding: 0 0.322061rem 0;
+}
+.area-box,.centerSelect{
+    width: calc(100% - 88px);
+    float: left;
+    margin-left: 4px;
+}
+
+.generateWrap .areaLable {
+    display: inline-block;
+    vertical-align: middle;
+    height:30px;
+    line-height: 30px;
+}
+
+.generateWrap .provinceSelect,.generateWrap .citySelect {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.generateWrap .centerSelect {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.generateWrap .textCenter {
+    margin-top: 3px;
+    width: 5rem;
+    float: right;
+    font-size: 12px;
+    min-height: 1rem;
+}
+
+
+.citySelect{
+    margin-left:10% ;
+}
+
+
+.generateWrap .boldStyle {
+    font-weight: 700;
+}
+
+.generateWrap .money {
+    font-size: 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.generateWrap .toSumit {
+    display: block;
+    width: 3.059581rem;
+    height: 0.78905rem;
+    line-height: 0.82rem;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background: #59b0c9;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.080515rem;
+    margin-top: .644122rem;
+    text-decoration: none;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .generateWrap .toSumit {
+        margin-top: 3px
+    }
+}
+
+.buyCarInfo .provinceSelect .select-value {
+    font-size: 14px;
+    z-index: 10;
+}
+
+.buyCarInfo .provinceSelect .select-option {
+    z-index: 9;
+    padding-top: .4rem;
+}
+
+.buyCarInfo .citySelect .select-value {
+    font-size: 14px;
+    z-index: 10;
+}
+
+.buyCarInfo .citySelect .select-option {
+    z-index: 9;
+    padding-top: .4rem;
+}
+
+.buyCarInfo .centerSelect .select-value {
+    font-size: 14px;
+    z-index: 7;
+}
+
+.buyCarInfo .centerSelect .select-option {
+    z-index: 6;
+    padding-top: .4rem;
+}
+.generateWrap .footer-mask a{
+    width: 3.059581rem;
+    height: 2em;
+    line-height: 2.2em;
+    display: block;
+    background: #27adc7;
+    text-align: center;
+    border-radius: 0.080515rem;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.generateWrap .mask-affirm p:nth-of-type(2){
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,90 @@
+#shopOrderSuccess .arrival-title {
+       padding: 10px 34px;
+       background: rgba(66, 63, 58, .7);
+       box-sizing: border-box;
+       position: relative;
+}
+
+#shopOrderSuccess .arrival-icon {
+     display: inline-block;
+      float: left;
+      font-size: 0;
+      position: absolute;
+      top: 20px;
+}
+
+#shopOrderSuccess .arrival-icon img {
+    width: 40px;
+}
+
+#shopOrderSuccess .arrival-title p {
+    padding-left: 35px;
+}
+
+#shopOrderSuccess .arrival-title p:nth-of-type(1) {
+         font-size: 20px;
+         margin-left: 30px;
+}
+
+#shopOrderSuccess .arrival-title p:nth-of-type(2) {
+        font-size: 14px;
+        margin-left: 30px;
+        width: 320px;
+}
+
+#shopOrderSuccess .timezone {
+    width: 28px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    margin-top: 40px;
+    margin-left: 28px;
+    border-radius: 3px;
+    position: relative;
+}
+
+
+#shopOrderSuccess .timezone:after {
+    content: '';
+    width: 100px;
+    color: #fff;
+    position: absolute;
+    margin-left: -35px;
+    bottom: -30px;
+}
+
+#shopOrderSuccess .timezone .time {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+#shopOrderSuccess .timezone .time > span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+
+#shopOrderSuccess .timezone .time > div {
+    position: absolute;
+    margin-left: 35px;
+    width: 400px;
+}
+
+#shopOrderSuccess .timezone .time > div p {
+    color: #fff;
+    text-align: left;
+}
+
+#shopOrderSuccess .SuccessText{
+    padding-top:30px;
+    font-size: 14px;
+
+}
+#shopOrderSuccess .SuccessText p:nth-of-type(1){
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+

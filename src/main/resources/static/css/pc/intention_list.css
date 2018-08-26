@@ -1,0 +1,136 @@
+html{
+    min-width: 1130px;
+}
+.intention header{
+    min-width: 1130px;
+    box-sizing: border-box;
+}
+.back {
+    min-width: 1130px;
+    width: 100%;
+    height: 46px;
+    background-color: #eef0f1;
+    line-height: 46px;
+    box-sizing: border-box;
+
+}
+
+.back p {
+    min-width: 1130px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.back p span{
+    cursor: pointer;
+    padding-left: 84px;
+}
+
+.back img {
+    width: 8px;
+    margin-right: 4px;
+}
+
+.intention-content {
+    min-width: 1230px;
+    margin: 0px auto;
+    padding: 50px 84px;
+}
+
+
+/*.intention*/
+
+.small-btn {
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    background: #2cb3cc;
+    border-radius: 4px;
+    padding: 2px 14px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.title {
+    font-size: 24px;
+}
+.t-bottom{
+    margin-bottom: 4px;
+}
+
+
+.list {
+    font-family: 'Porsche-Bold', '黑体', '华文黑体', 'SimHei', '华文黑体', 'STHeiti', '宋体', 'SimSun', sans-serif;
+    font-size: 14px;
+    margin-top: 100px;
+    border-top: 1px solid #ccc;
+    padding: 30px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.list h1 {
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.intention-content .info {
+    float: right;
+}
+
+.info p {
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.info p span:first-child {
+    margin-right: 20px;
+    width: 98px;
+    display: inline-block;
+}
+
+.sign {
+    margin: 30px;
+}
+
+.sign > div {
+    float: right;
+    margin-left: 30px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+.list section{
+    padding-left:34px;
+    margin:24px 0;
+
+}
+.list h1 {
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.list p{
+    padding-left: 34px;
+}
+
+.list h1 i {
+    font-style: normal;
+    padding-right: 8px;
+}
+footer {
+    min-width: 1130px;
+}

@@ -1,0 +1,370 @@
+html,body{
+    background: black;
+}
+
+.registerWrap input {
+    padding-left: 0.322061rem;
+}
+.subscription {
+    min-height: calc(100% - 2.560386rem);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reservation {
+    /*min-height: calc(100% - 4.1rem);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;;
+}
+.registerWrap .banner {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    /*overflow: hidden;*/
+    background-repeat: no-repeat;
+    /*padding-bottom: 30px;*/
+    box-sizing: border-box;
+    padding-top: 3.2643rem;;
+}
+
+.registerWrap .noBannerTop {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: 100% 100%;*/
+    /*overflow: hidden;*/
+    /*background-repeat: no-repeat;*/
+    /*padding-bottom: 0px;*/
+
+    display: none;
+}
+
+.registerWrap .newBoxBanner {
+    width: 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 1.540323rem;
+    z-index: 999;
+    margin-top: 1.540323rem;
+    background: #000;
+}
+
+.registerWrap .subscriptionTitle {
+    height: .169082rem;
+    padding: .281804rem 0;
+    color: white;
+    display: table;
+    width: 100%;
+    /*background: rgba(0,0,0,.7);*/
+    background: rgba(54, 54, 54, .8);
+}
+
+.registerWrap .leftInfo {
+    width: 1.288245rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.registerWrap .subscriptionTitle img {
+    width: .644122rem;
+    height: .724638rem;
+    left: .402576rem;
+    display: inline-block;
+
+}
+
+.registerWrap .rightInfo {
+    display: table-cell;
+    width: 6.247987rem;
+    vertical-align: middle
+}
+
+.registerWrap .rightInfo span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.registerWrap .rightInfo span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 14px;
+    width: 290px;
+}
+
+.registerWrap .registerContent .star {
+    color: #59b0c9;
+}
+
+.registerContent .infoCall {
+    width: 5.555556rem;
+    border-radius: 14px;
+    /*padding-left: 10px;*/
+    box-sizing: border-box;
+    height: .724638rem;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.registerContent {
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    padding: .322061rem 1.127214rem .422061rem ;
+    position: relative;
+    z-index: 10;
+    background: rgba(51, 51, 51, .5);
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .registerContent {
+        font-size: 14px;
+        color: white;
+        box-sizing: border-box;
+        padding: .322061rem 1rem 0;
+    }
+}
+
+.registerContent .worldSpace {
+    display: inline-block;
+    width: .805153rem;
+}
+
+.registerContent .infoName {
+    width: 2.29rem;
+    border: none;
+    border-radius: 14px;
+    height: .7rem;
+    background: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.registerContent .marginTop {
+    margin-top: .281804rem;
+    /*top: 10px;*/
+}
+
+.registerContent .emailInput {
+    width: 5.555556rem;
+    border-radius: 14px;
+    box-sizing: border-box;
+    height: .724638rem;
+    line-height: .724638rem;
+    height: 28px;
+    background: #fff;
+    border: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.registerContent .bingo img {
+    display: inline-block;
+    width: .273752rem;
+}
+
+.registerContent .policy {
+    text-decoration: underline;
+    color: white;
+    vertical-align: baseline;
+}
+.registerContent .subscriptionSubmit{
+    margin: .402576rem 0 ;
+}
+
+.registerContent .subscriptionSubmit a {
+    display: block;
+    width: 3.059581rem;
+    height: 0.78905rem;
+    line-height: 0.825rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.080515rem;
+    background: #59b0c9;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.registerContent .reservationSubmit {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: .241546rem;
+    line-height: .241546rem;
+    margin-top: .644122rem;
+    margin-bottom:.4rem;
+}
+
+.registerContent .reservationSubmit .onlineOrder {
+    display: inline-block;
+    width: 3.059581rem;
+    height: 0.78905rem;
+    line-height:  0.82rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.080515rem;
+    background: #59b0c9;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registerContent .shopOrder {
+    font-size: 16px;
+    position: absolute;
+    right: -15px;
+}
+
+.registerContent .shopOrder u {
+    font-size: 16px;
+    text-decoration: underline;
+    vertical-align: baseline;
+}
+
+.registerWrap .banner .seeOrder {
+    background: #27adc7;
+    border-radius: 20px 0 0 20px;
+    -moz-border-radius: 10px 0 0 10px;
+    width: 4.62963rem;
+    height: 1.167472rem;
+    position: absolute;
+    right: 0;
+    color: white;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 18px;
+    top: 1rem;
+}
+
+.registerWrap .backOrder {
+    background: #27adc7;
+    border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    width: 1.207729rem;
+    /*height: 1.127214rem;*/
+    height: 1.167472rem;
+    position: absolute;
+    left: 0;
+    /*padding: 25px;*/
+    color: white;
+    box-sizing: border-box;
+    top: 1rem;
+}
+
+.registerWrap .backOrder img {
+    width: 15px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.registerWrap .banner .seeOrder span {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    padding-top: 2px;
+    position: absolute;
+    left: .8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.registerWrap .banner .seeOrder img {
+    width: 15px;
+    left: .4rem
+}
+
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .registerWrap .specalInput {
+        margin-left: 2.1rem
+    }
+}
+
+.registerWrap .colorRed {
+    color: red;
+}
+
+.registerWrap .order-mask {
+    height: auto;
+    width: 80%;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .registerWrap .order-mask {
+        height: auto;
+        width: 90%;
+    }
+}
+
+.registerWrap .order-mask p:nth-of-type(1){
+    padding-top: .5rem;
+    padding-bottom: .3rem;
+}
+
+.registerWrap .order-mask p:nth-of-type(2) {
+    padding: 0 0 .6rem .1rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.registerWrap .order-mask .order-mask-footer {
+    background: #ededed;
+    padding: 10px 0;
+    border-radius: 0 0 0.14rem 0.14rem;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .registerWrap .order-mask .order-mask-footer a:nth-of-type(1), .registerWrap .order-mask .order-mask-footer a:nth-of-type(2) {
+        font-size: 15px !important;
+    }
+}
+
+
+.registerWrap .order-mask .order-mask-footer .seeMyOrder {
+    display: inline-block;
+    height: 30px;
+    line-height: 32px;
+    background: #36b3ca;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.seeDetail-img{
+    width: 100%;
+    height: 100%;
+}
+
+.registerBingo{
+    top: 4px;
+}
+
+.registerCircle{
+    position: relative;
+    top: 2px;
+}
+
+
+@media screen and (device-width: 414px) and (device-height: 736px) {
+    .infoCall .select-value{
+        line-height: 30px;
+    }
+}
+
+@media screen and (device-width: 414px) and (device-height: 736px) {
+    .paddingTop {
+        padding-top: 0px!important;
+    }
+}
+.registerContent .select-option{
+    top: 1.18em;
+}

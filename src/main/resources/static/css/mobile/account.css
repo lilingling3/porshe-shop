@@ -1,0 +1,335 @@
+html, body {
+    width: 100%;
+    color: #000;
+}
+
+.wrapper {
+    min-height: calc(100% - 4.1rem);
+}
+
+.section-one .account-title {
+    padding: 0.7rem 0.434783rem 0.289855rem;
+    height: 1.714976rem;
+    background: #eff0f1;
+    box-sizing: border-box;
+}
+
+.order-title {
+    padding: 0 0.434783rem;
+    position: relative;
+    justify-items: center;
+    height: 1.714976rem;
+    line-height: 1.714976rem;
+    background: #eff0f1;
+    box-sizing: border-box;
+}
+
+.account-icon {
+    float: left;
+
+}
+
+.account-icon img {
+    width: 0.740741rem;
+
+}
+
+.account-title p, .order-title p {
+    font-size: 18px;
+    padding-left: 0.249597rem;
+    display: inline-block;
+
+}
+
+.account-title .operate {
+    float: right;
+}
+
+.account-title .operate span {
+    font-size: 16px;
+    background: #2d2d2d;
+    padding: 4px 12px 2px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 6px;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.person-info {
+    padding: 0.410628rem 1.022544rem;
+    font-size: 14px;
+
+}
+
+.person-info > div {
+    margin-bottom: 0.402576rem;
+}
+
+.person-name > div > span {
+    height: 0.217391rem;
+    line-height: 0.217391rem;
+}
+
+.person-info span i {
+    color: #6eb1ca;
+    font-size: 14px;
+    font-style: normal;
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.address .col-sm-5 {
+    margin-bottom: 0.402576rem;
+}
+
+.person-info input, .address select {
+    height: 27px;
+    padding: 2px 8px;
+    border-radius: 14px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background: #eff0f1;;
+    border: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*查看信息模式*/
+.person-show .operate .cancle, .person-show .operate .save {
+    display: none;
+}
+
+.person-edit .operate .edit, .person-edit .name-show {
+    display: none;
+}
+
+.person-show input, .person-show select, .person-show .name-edit, .person-show .person-name .text-center, .person-show .address, .person-show .chengwei {
+    display: none;
+}
+
+.person-show span i {
+    opacity: 0;
+}
+.chengwei{
+    height: 27px;
+    line-height: 27px;
+}
+.address select {
+    width: 100%;
+    margin-bottom: 0.410628rem;
+}
+
+.person-edit > .person-info > div > p, .person-edit .value {
+    display: none;
+}
+
+.no-order {
+    padding: 0.241546rem;
+    position: relative;
+
+}
+
+.no-order .btn {
+    font-size: 14px;
+    opacity: 0;
+    min-width: 3.4rem;
+    padding: 0;
+}
+
+.no-order img {
+    width: 100%;
+
+}
+
+.btn-box {
+    color: #fff;
+    position: absolute;
+    bottom: 0.483092rem;
+    right: 0.483092rem;
+}
+
+.hid {
+    display: none;
+}
+
+.my-order {
+    padding: 0.241546rem;
+}
+
+.order {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0.10467rem;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, .4);
+    z-index: 1000
+}
+
+.order > p {
+    background-color: #eef0f1;
+    font-size: 16px;
+    padding: 0.225443rem  0.330113rem;
+
+}
+
+.order > p > span, .order-status span {
+    float: right;
+    text-align: right;
+}
+
+.order-status {
+    background-color: #000;
+    color: #fff;
+    padding: 0 0.330113rem;
+}
+
+.order-status .btn {
+    position: relative;
+    top: -0.072464rem;
+}
+
+.order-status p:first-child {
+    font-size: 16px;
+    padding: 0.442834rem 0;
+    border-bottom: 2px solid #fff;
+
+}
+
+.order-status p:last-child {
+    font-size: 12px;
+    padding: 0.289855rem 0;
+
+}
+
+.order-info {
+    padding: 0.402576rem 0.330113rem;
+    font-size: 14px;
+}
+
+.order-title p {
+    padding-left: 1rem;
+
+}
+
+.order p {
+    margin-bottom: 0.144928rem;
+
+}
+
+.order .bold {
+    margin-bottom: 0;
+}
+
+.order-info p span:first-child {
+    width: 110px;
+    display: inline-block;
+}
+
+.s-btn {
+    color: #fff;
+    font-size: 12px;
+    height: 0.458937rem;
+    line-height: 0.55rem;
+    width: inherit;
+    padding: 2px 0.193237rem;
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+.person-info .my-select .select-value {
+    background: #eff0f1;
+    height: 27px;
+    line-height: 29px;
+}
+
+.person-info .col-sm-3 {
+    height: 27px;
+    line-height: 27px;
+}
+
+.person-edit .select-option {
+    border: 1px solid #eff0f1;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.order-status .btn {
+    text-align: center;
+}
+
+.p-center {
+    width: calc(100% - 110px);
+    display: inline-block;
+    float: right;
+}
+
+.person-show .person-info > div > p, .value {
+    min-height: 27px;
+    line-height: 27px;
+}
+
+.person-show .person-info > div:nth-of-type(1) ,.person-show .person-name, .person-show .email-box{
+    margin-bottom: 0.402576rem;
+
+}
+
+
+
+.order-status .delete{
+    float: right;
+    font-size: 14px;
+    margin-right:0.21031rem;
+    line-height: 24px;
+}
+.mask-unfinish{
+    width: 8.5rem;
+}
+.footer-mask{
+    padding: 10px 0;
+    background: #ededed;
+    border-radius:0 0 5px 5px;
+}
+
+.dialog-content{
+padding: 30px 15px;
+}
+.dialog-title{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.commonInput .btn{
+    color:#fff;
+    width: 1.6rem;
+    min-width: 1.6rem;
+    font-size: 14px;
+
+}
+
+.footer-mask span:first-child{
+    margin-right: 0.5rem;
+}
+.footer-mask span:last-child{
+    margin-left: 0.5rem;
+}
+
+
+commonInput .mask-wrap {
+     position: fixed;
+    overflow: hidden;
+ }
+
+.g-hid{
+    opacity:0;
+}

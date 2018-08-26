@@ -1,0 +1,91 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    overflow:hidden;
+    height: 16rem;
+    min-height:calc(100% - 4.3rem);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+
+.back{
+    background-color: #eef0f1;
+    height: 1.441224rem;
+    line-height: 1.441224rem;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    padding-left: 0.805153rem;
+    background-size: 0.241546rem;
+    background-position: 0.41546rem 0.485rem;
+    position: relative;
+}
+.refund{
+    padding:0.624638rem 0.724638rem  0;
+}
+.refund p:first-child{
+    font-size: 16px;
+}
+.refund p:nth-of-type(2){
+    font-size: 12px;
+    margin: 0.193237rem 0 0.322061rem 0;
+}
+
+.list li{
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+.list li span{
+    font-size: 14px;
+    margin-left:0.402576rem;
+}
+.list li span{
+    position: relative;
+    top:-2px;
+}
+.other textarea{
+    width: calc(100% - 0.724638rem);
+    border:2px solid #ccc;
+    background-color: rgba(0,0,0,0);
+    border-radius: 0.080515rem;
+    height: 1.5008rem;
+    margin-left: 0.724638rem;
+    margin-top: 0.193237rem;
+    resize:none;
+}
+
+.btn-box{
+    text-align: center;
+    color:#fff;
+}
+.refund .btn-box .btn{
+    margin:0  0.241546rem;
+}
+.hid{
+    display: none;
+}
+.refundSuccess{
+    padding:0 0.724638rem;
+}
+.refundSuccess>p:first-child{
+    padding:0.676329rem 0;
+    font-size: 16px;
+}
+.refundSuccess>p:nth-of-type(2){
+    font-size: 14px;
+}
+
+.refundSuccess .btn-box{
+    text-align: left;
+    margin-top:0.676329rem ;
+
+}
+.btn-box{
+    margin: 0.241546rem 0 0.4rem;
+}

@@ -1,0 +1,82 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  labels:
+    k8s-app: porsche-shop
+  name: porsche-shop
+  namespace: porsche-shop-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: porsche-shop
+  template:
+    metadata:
+      labels:
+        k8s-app: porsche-shop
+    spec:
+      volumes:
+      - name: data
+        hostPath:
+          path: "/data"
+      containers:
+      - name: porsche-shop
+        image: harbor.boldseas.com/porsche/porsche-shop:master.latest
+        imagePullPolicy: Always
+        env:
+        - name: CONFIG
+          value:
+        - name: JAVA_OPTS
+          value: -Xmx1024m -Xms1024m
+        - name: PARAMS
+          value: -Dspring.profiles.active=test -Djava.security.egd=file:/dev/./urandom
+        - name: VARS
+          value:
+        ports:
+        - containerPort: 9090
+          protocol: TCP
+        - containerPort: 9999
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /data
+          name: data
+      nodeSelector:
+        node.type: worker
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    k8s-app: porsche-shop
+  name: porsche-shop
+  namespace: porsche-shop-test
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 9090
+    nodePort: 30115
+    name: service-port
+  - port: 9999
+    targetPort: 9999
+    name: job-port
+  selector:
+    k8s-app: porsche-shop
+---
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: porsche-shop
+  namespace: porsche-shop-test
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/add-base-url: "true"
+spec:
+  rules:
+  - host: k8s.bs.com
+    http:
+      paths:
+      - path: /porsche-shop-test/porsche-shop-job
+        backend:
+          serviceName: porsche-shop
+          servicePort: 9999

@@ -1,0 +1,7 @@
+#商品配置
+goods:
+  id: 999
+  price: 1 #单位为分
+
+font:
+  path: /data-project/font/

@@ -1,0 +1,188 @@
+server:
+  port: 9090
+  host: https://porsche-shop.boldseas.com/
+  tomcat:
+    uri-encoding: UTF-8
+    accesslog:
+      directory: /data/logs/porsche-shop/access
+      enabled: true # Enable access log.
+      pattern: "%h %A:%p %l %u %t \"%r\" %s %b %D %{User-Agent}i"
+    remote-ip-header: X-Forwarded-For
+    protocol-header: X-Forwarded-Proto
+    protocol-header-https-value: https
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+spring:
+  jackson.serialization.write_dates_as_timestamps: false  #修复rest api对外提供LocalDateTime接口时间格式
+  datasource:
+    url: jdbc:mysql://192.168.2.208:5806/porsche_shop?characterEncoding=utf8&useSSL=true
+    username: porscheshop-user
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    max-active: 200 #连接池最大连接数
+    max-idle: 50 #空闲池中最大连接数
+    min-idle: 10 #空闲池中最小连接数
+    initial-size: 10 #空闲池中最小连接数
+    min-evictable-idle-time-millis: 60000 #连接在池中空闲最小时间后被清除
+    time-between-eviction-runs-millis: 30000 #隔多久时间清回收废弃连接
+    testOnBorrow: true #每次调用检测池里连接的可用性，假如连接池中的连接被数据库关闭了，应用通过连接池getConnection时会重新创建
+    validation-query: SELECT 1
+    remove-abandoned: true #移除被遗弃的连接
+    tomcat:
+      remove-abandoned-timeout: 60 #设置超时时间
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    hibernate.naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    hibernate.naming.physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  mobile:
+    devicedelegatingviewresolver:
+      enabled: true
+      normal-prefix: pc/
+      tablet-prefix: pc/
+  redis:
+    database: 5
+    host: 192.168.2.228 # Redis server host.
+    port: 6379  # Redis server port.
+    password: a46aSZQtpjIO#c!v # Login password of the redis server.
+    timeout: 3000 # Connection timeout in milliseconds.
+cdn:
+  path:
+     image: https://cdn.boldseas.com/image/porsche-shop/test
+     style: /css
+     scripts: /js
+font:
+  path: #本机为空，取项目中的字体路径
+#请求处理的超时时间
+ribbon:
+  ReadTimeout: 8000
+  ConnectTimeout: 8000
+hystrix.command.default.execution.timeout.enabled: false
+constant:
+  verificationCodeSendPhoneMinutes: 1 #1个手机号1分钟最多可以发2个短信验证码
+  verificationCodeSendPhoneMaxTimes: 2
+  verificationCodeSendIpMinutes: 1    #1个ip地址1分钟最多可以发100个短信验证码
+  verificationCodeSendIpMaxTimes: 100
+  phoneLoginFailMinutes: 1 #1个手机号1分钟最多可以登录失败5次
+  phoneLoginFailMaxTimes: 5     #用户登录失败最多次数
+  ipLoginFailMinutes: 1    #1个ip地址1分钟最多可以登录失败10次
+  ipLoginFailMaxTimes: 10
+  ipValidateTokenFailMinutes: 1 #1个ip地址1分钟最多可以验证token失败5次
+  ipValidateTokenFailMaxTimes: 5
+  loginExpireTime: 31536000  #登录状态过期时间：一年，单位：秒
+#商品配置
+goods:
+  id: 999
+  price: 1 #单位为分
+pmp:
+  url: "http://pmptest.boldseas.com"
+  apiKey: "apiKey-3rd"
+
+cookie:
+  domain: boldseas.com
+sms:
+  accessToken: 96aed26a19b7438da60ccf09a3551486
+  paySuccessToken: a3f0a3ddcbc851df8e32579365cd6666
+  offLinePaymentToken: f00ac39111823fe2c40465ed8bdd77da
+email:
+  paySuccessToken: 5086754f04812f3dd4b40d37e3f07ea5
+  refundToken: 222a8b8238c4ea03d56b57a6cfaabbb8
+  testEmail: hedy.gao@boldseas.com
+  excelPassword:  Taycan@2018
+  dailyReportToken: 5475dfd115484e8a82bbaeb0df1e07fa
+  dailyReportAddresses: jingxuan.chen@boldseas.com
+
+timer:
+  run: true
+  sendPaySuccessForDealer: 0 0 9 1/1 * ? #每天早上9点
+
+####################### 支付相关配置##############################
+
+#### ums配置（扫码支付，h5支付，微信公众号支付)
+umsPay:
+  ums-host: https://qr-test2.chinaums.com/
+  msgSrc: WWW.TEST.COM
+  msgSrcId: 3194
+  privateKey: fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR
+  businessTypes:
+    - type: qrCode
+      instMid: QRPAYDEFAULT
+      msgType: bills.getQRCode
+      payUrl:
+      notifyUrl: ${server.host}ums/v0/api/qr-code/call-back
+      returnUrl:
+    - type: h5AliPay
+      instMid: H5DEFAULT
+      msgType: trade.h5Pay
+      payUrl: ${umsPay.ums-host}netpay-portal/webpay/pay.do
+      notifyUrl: ${server.host}ums/v0/api/wap/call-back
+      returnUrl: ${server.host}pay/success/
+    - type: wxPublic
+      instMid: YUEDANDEFAULT
+      msgType: WXPay.jsPay
+      payUrl: ${umsPay.ums-host}netpay-portal/webpay/pay.do
+      notifyUrl: ${server.host}ums/v0/api/wap/call-back
+      returnUrl: ${server.host}pay/success/
+    - type: h5QuickPass
+      instMid: H5DEFAULT
+      msgType: uac.order
+      payUrl: ${umsPay.ums-host}netpay-portal/webpay/pay.do
+      notifyUrl: ${server.host}ums/v0/api/wap/call-back
+      returnUrl: ${server.host}pay/success/
+
+######################网关支付配置###########################################
+unionPay:
+##########################跳转Url################################
+  host: https://gateway.test.95516.com/
+  frontTransUrl: ${unionPay.host}gateway/api/frontTransReq.do
+
+# 报文版本号，固定5.1.0，请勿改动
+  version: '5.1.0'
+
+# 签名方式，证书方式固定01，请勿改动
+  signMethod: '01'
+
+# 是否验证验签证书的CN，测试环境请设置false，生产环境请设置true。非false的值默认都当true处理。
+  ifValidateCNName: false
+
+# 是否验证https证书，测试环境请设置false，生产环境建议优先尝试true，不行再false。非true的值默认都当false处理。
+  ifValidateRemoteCert: false
+
+#后台通知地址，填写接收银联后台通知的地址，必须外网能访问
+  backUrl: ${server.host}ums/v0/api/gate-way/call-back
+
+#前台通知地址，填写处理银联前台通知的地址，必须外网能访问
+  frontUrl: ${server.host}pay/success/
+
+#########################入网测试环境签名证书配置 ################################
+
+# 签名证书路径，必须使用绝对路径，如果不想使用绝对路径，可以自行实现相对路径获取证书的方法；测试证书所有商户共用开发包中的测试签名证书，生产环境请从cfca下载得到。
+  signCertPath: certs/test/acp_test_sign.pfx
+# 签名证书密码，测试环境固定000000，生产环境请修改为从cfca下载的正式证书的密码，正式环境证书密码位数需小于等于6位，否则上传到商户服务网站会失败
+# 表示证书打开时的密钥
+  signCertPwd: '000000'
+# 签名证书类型，固定不需要修改
+  signCertType: PKCS12
+
+#########################加密证书配置,以下三个证书都是公钥 ################################
+# 敏感信息加密证书路径(银联提供)
+  encryptCertPath: certs/test/acp_test_enc.cer
+
+##########################验签证书配置################################
+# 验签中级证书路径(银联提供)
+  middleCertPath: certs/test/acp_test_middle.cer
+# 验签根证书路径(银联提供)
+  rootCertPath: certs/test/acp_test_root.cer
+xxl:
+  job:
+    accessToken:
+    admin:
+      addresses: http://192.168.2.247:8085
+    executor:
+      appname: porsche-shop-notify
+      ip:
+      port: 9999
+      logretentiondays: -1
+      logpath: /data/logs/pre-order/xxl-job/jobhandler

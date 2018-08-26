@@ -1,0 +1,185 @@
+
+html {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+body {
+
+    height: 100%;
+}
+
+.login {
+    min-height: calc(100% - 4.1rem);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 13.217742rem;
+}
+
+.swiper-container .swiper-slide {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 13.217742rem;
+    background-size: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper > p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5.080645rem;
+    color: #fff;
+}
+
+.qipao {
+    width: 0.548387rem;
+    margin-right: 0.241935rem;
+    position: relative;
+    top: 0.129032rem;
+}
+
+.login-form {
+    margin-top: 6.16645rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    background: rgba(51, 51, 51, .8);
+}
+
+.hid {
+    display: none;
+}
+
+.login-form > div {
+    color: #fff;
+    font-size: 14px;
+    margin: 0.322581rem auto 0;
+    text-align: center;
+}
+
+.login-form label {
+    line-height: .72rem;
+}
+
+.login-form > p {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 16px;
+    color: #fff;
+    height: 1.521739rem;
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, .1), rgba(51, 51, 51, .4));
+
+}
+
+.login-form > p img {
+    width: 0.9184rem;
+    margin-top: 0.3rem;
+
+}
+
+.verificationCode, .phoneBox {
+    display: flex;
+    justify-content: center;
+}
+
+.verificationCode input, .phoneBox input {
+    border-radius: 0.78905rem;
+    border: none;
+    height: 0.724638rem;
+    line-height: 0.724638rem;
+    padding: 0 0.257649rem;
+    width: 5.523349rem;
+    box-sizing: border-box;
+
+}
+
+.verificationCode p {
+    position: relative;
+    display: inline-block;
+}
+
+.verificationCode span {
+    position: absolute;
+    background: #27adc7;
+    font-size: 12px;
+    padding: 1.5px 3px 0px;
+    border-radius: 0 0.386473rem 0.386473rem 0;
+    top: 0px;
+    right: -1px;
+    height: 0.724638rem;
+    line-height: 0.724638rem;
+    color: #fff;
+    min-width: 2.012882rem;
+    box-sizing: border-box;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .verificationCode span {
+        width: 2.3282rem;
+    }
+
+    .login-form > p {
+        font-size: 14px;
+    }
+}
+
+.login-form .info {
+    margin: 0.611916rem 0 0.660225rem 1.4rem;
+    text-align: left;
+    position: relative;
+}
+
+.info p {
+    width: 100%;
+    margin-bottom: 0.402576rem;
+    font-size: 12px;
+}
+
+.wrapper .circle {
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
+
+.wrapper .bingo {
+    z-index: 2;
+}
+
+.login-form .btn-box {
+    margin: 0.322581rem 0;
+}
+
+
+
+.login input::-webkit-input-placeholder {
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.login-form input:-moz-placeholder {
+    font-size: 10px !important;
+    text-align: center;
+    position: relative;
+
+}
+
+.login-form input:-ms-input-placeholder {
+    font-size: 10px !important;
+    text-align: center;
+    position: relative;
+}
+

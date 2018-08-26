@@ -1,0 +1,102 @@
+server:
+  host: https://www.porsche-online-preorder.com.cn/
+spring:
+  jackson.serialization.write_dates_as_timestamps: false  #修复rest api对外提供LocalDateTime接口时间格式
+  datasource:
+    url: jdbc:mysql://172.16.112.21:5806/porsche_shop?characterEncoding=utf8&useSSL=true
+    username: shop-user
+    password: GoDxo3ntlFQLZt
+    driver-class-name: com.mysql.jdbc.Driver
+    max-active: 200 #连接池最大连接数
+    max-idle: 50 #空闲池中最大连接数
+    min-idle: 10 #空闲池中最小连接数
+    initial-size: 10 #空闲池中最小连接数
+    min-evictable-idle-time-millis: 60000 #连接在池中空闲最小时间后被清除
+    time-between-eviction-runs-millis: 30000 #隔多久时间清回收废弃连接
+    testOnBorrow: true #每次调用检测池里连接的可用性，假如连接池中的连接被数据库关闭了，应用通过连接池getConnection时会重新创建
+    validation-query: SELECT 1
+    remove-abandoned: true #移除被遗弃的连接
+    tomcat:
+      remove-abandoned-timeout: 60 #设置超时时间
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    hibernate.naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    hibernate.naming.physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  redis:
+    database: 1
+    host: 172.16.106.31 # Redis server host.
+    port: 6379  # Redis server port.
+    password: gtP2HdOOBtJHirZA # Login password of the redis server.
+    timeout: 0 # Connection timeout in milliseconds.
+cdn:
+  path:
+    image: https://cdn.boldseas.com/image/porsche-shop/pro
+    style: https://cdn.boldseas.com/css/porsche-shop/pro
+    scripts: https://cdn.boldseas.com/js/porsche-shop/pro
+font:
+  path: /data-project/font/
+pmp:
+  url: "https://mobreportapi.boldseas.com/"
+  apiKey: "apiKey-3rd"
+#商品配置
+goods:
+  id: 999
+  price: 2000000 #单位为分
+cookie:
+  domain: porsche-online-preorder.com.cn
+sms:
+  accessToken: c2f7f2f112364f1aa24cb76cbabb5043
+  paySuccessToken: 1ec9b1393aa81911be64a8b5247bf68a
+  offLinePaymentToken: 1473573419621f61729156631464273d
+email:
+  paySuccessToken: 5086754f04812f3dd4b40d37e3f07ea5
+  refundToken: 222a8b8238c4ea03d56b57a6cfaabbb8
+  testEmail: ashley.liu@porsche.cn
+  excelPassword:  Taycan@2018
+  dailyReportToken: 5475dfd115484e8a82bbaeb0df1e07fa
+  dailyReportAddresses: jingxuan.chen@boldseas.com
+
+
+####################### 支付相关配置##############################
+
+#### ums配置（扫码支付，h5支付，微信公众号支付)
+umsPay:
+  ums-host: https://qr.chinaums.com/
+  msgSrc: WWW.BSJZGQCXS.COM
+  msgSrcId: 4122
+  privateKey: 2ZeE47FxrjNwRmzPmnfcQkH6PJJRBChQNcEGNhts6kbaASkj
+
+######################网关支付配置###########################################
+unionPay:
+##########################跳转Url################################
+  host: https://gateway.95516.com/
+  fileTransUrl: https://filedownload.95516.com/
+
+# 是否验证验签证书的CN，测试环境请设置false，生产环境请设置true。非false的值默认都当true处理。
+  ifValidateCNName: true
+
+# 是否验证https证书，测试环境请设置false，生产环境建议优先尝试true，不行再false。非true的值默认都当false处理。
+  ifValidateRemoteCert: true
+
+#########################入网测试环境签名证书配置 ################################
+  signCertPath: certs/prod/acp_prod_sign.pfx
+  signCertPwd: '711124'
+
+#########################证书配置(银联提供)################################
+  encryptCertPath: certs/prod/acp_prod_enc.cer
+  middleCertPath: certs/prod/acp_prod_middle.cer
+  rootCertPath: certs/prod/acp_prod_root.cer
+
+xxl:
+  job:
+    accessToken:
+    admin:
+      addresses: http://172.16.106.31:8085
+    executor:
+      appname: porsche-shop-notify
+      ip:
+      port: 9999
+      logretentiondays: -1
+      logpath: /data/logs/pre-order/xxl-job/jobhandler

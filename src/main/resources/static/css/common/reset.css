@@ -1,0 +1,115 @@
+blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    padding: 0;
+    margin: 0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+}
+
+table {
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+legend {
+    display: none
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-weight: 400;
+    font-style: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 100%
+}
+
+q:after, q:before {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0
+}
+
+a {
+    vertical-align: middle;
+    text-decoration: none
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/*保时捷字体*/
+@font-face {
+    font-family: 'porsche-font';
+    src: url('./font/PorscheNextTT-Regular.eot');
+    src: url('./font/PorscheNextTT-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('./font/PorscheNextTT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Porsche-Thin';
+
+    src: url('./font/PorscheNextTT-Thin.eot');
+    src: url('./font/PorscheNextTT-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Porsche-Bold';
+    src: url('./font/PorscheNextTT-Bold.eot');
+    src: url('./font/PorscheNextTT-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*保时捷字体*/
+@font-face {
+    font-family: 'porsche-simHei';
+    src: url('./font/simhei.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+
+    font-family: 'porsche-font', '黑体', '华文黑体', 'SimHei', 'STHeiti', 'SimSun', sans-serif !important;
+}
+
+.bold {
+    font-family: 'Porsche-Bold', '黑体', '华文黑体', 'SimHei', '华文黑体', 'STHeiti', '宋体', 'SimSun', sans-serif;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}

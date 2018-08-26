@@ -1,0 +1,16 @@
+html{
+    background: #000;
+}
+.wrapper{
+    width: 100%;
+    min-height: calc(100% -  1.529791rem - 105px);
+}
+.wrapper img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.notify{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

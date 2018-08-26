@@ -1,0 +1,78 @@
+#question .questionsWrap{
+    padding: 0 80px;
+}
+#question .numberW{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #a9d0d8;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    color: #28aac6;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+#question .leftW{
+    display: inline-block;
+    position: relative
+}
+
+#question .twoLine{
+    position: relative;
+    left: 23px;
+    padding-top: 10px;
+}
+
+#question ul li{
+    padding: 30px 0;
+    border: 1px solid #e4e4e4;
+    border-left: 0;
+    border-right: 0;
+}
+
+#question ul li:first-child{
+    border-top: none;
+}
+
+
+#question ul li:last-child{
+    border-bottom: none;
+}
+
+#question .backPage{
+    width: 100%;
+    height: 40px;
+    background-color: #eef0f1;
+    box-sizing: border-box;
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 60px;
+    font-size: 0;
+}
+
+#question .backSpace{
+    width: 80px;
+    padding-left: 20px;
+}
+
+#question .backPage img{
+    margin-right: 10px;
+    width: 10px;
+    vertical-align: middle;
+}
+
+#question .backPage span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+
+#question .questionsLine{
+    font-weight: 700;
+}
+

@@ -1,0 +1,62 @@
+
+.back{
+    background-color: #eef0f1;
+    height: 1.441224rem;
+    line-height: 1.441224rem;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    padding-left: 0.805153rem;
+    background-size: 0.241546rem;
+    background-position: 0.41546rem 0.485rem;
+}
+.content {
+    margin-top: 0.869565rem;
+    padding: 0 0.41868rem;
+    overflow: hidden;
+}
+.content article {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.644122rem;
+}
+.content>p{
+    font-size: 16px;
+}
+.order-info {
+    padding: 0.402576rem 0;
+    font-size: 14px;
+}
+.order-info p{
+    margin-bottom: 0.144928rem;
+}
+.order-info p span:first-child{
+    width: 110px;
+    display: inline-block;
+}
+.content article h1{
+    margin-top: 0.644122rem;
+    font-size: 14px;
+}
+.porsche-center{
+    margin: 0.805153rem 0;
+    float: right;
+}
+
+
+.list p{
+    padding-left: 30px;
+}
+.list section{
+    padding-left: 30px;
+    margin:0.44122rem 0;
+
+}
+.list{
+   padding: 0.44122rem 0;
+    font-family: 'Porsche-Bold', '黑体', '华文黑体', 'SimHei', '华文黑体', 'STHeiti', '宋体', 'SimSun', sans-serif;
+}
+
+.list h1 i {
+    font-style: normal;
+    padding-right: 8px;
+}

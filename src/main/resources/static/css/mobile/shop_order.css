@@ -1,0 +1,110 @@
+
+html,body{
+    width: 100%;
+    min-height: 100%;
+    background-color: #000;
+}
+
+header{
+    height: 1.540323rem;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+}
+.wrapper{
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: calc(100% - 4.1rem);
+    background-size: 100%;
+    overflow:hidden;
+    padding-top: 3.378261rem;
+    box-sizing: border-box;
+    background-color: #000;
+}
+.content{
+    color:#fff;
+    background: rgba(51,51,51,.5);
+    padding-top:  0.644122rem ;
+    min-height: 7.2rem;
+}
+
+.form .select-option{
+    font-size: 14px;
+}
+.form>p{
+    font-size: 14px;
+    margin: 0.442834rem 0 0.402576rem  1.46rem;
+}
+.form>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.289855rem;
+}
+.form .my-select{
+   width: 5.523349rem;
+}
+.form>div>label{
+    padding-right: 0.161031rem;
+    line-height: 30px;
+}
+
+.dealer-box{
+    margin-left:1.46rem;;
+    box-sizing: border-box;
+}
+.form>section ul{
+    margin-top:0.402576rem;
+    min-height: 4rem;
+
+}
+
+.dealer-option p:first-child{
+    font-size: 14px;
+}
+.dealer-option p:last-child{
+    padding:0 0.048309rem 0 20px;
+}
+
+.dealer-box ul li{
+    margin-bottom: 30px;
+    position: relative;
+    padding-right: .4rem;
+}
+.dealer-box ul li i{
+    margin-right: 3px;
+}
+.dealer-box ul li .circle{
+ position: relative;
+    top:1px;
+}
+.content .form .warm-info{
+    font-size: 10px;
+}
+.btn-box{
+    color:#fff;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 0.595813rem;
+    margin-right:  1.46rem;
+}
+
+
+.province .select-option{
+    z-index: 9;
+}
+.city .select-value{
+    z-index: 8;
+}
+.dealer-box .bingo{
+    top: 2px;
+}
+
+.my-select .select-value span:first-child {
+    color: #6a6a6a;
+}
+
+
+.line h1>i {
+    width: calc(100% - 108px - 0.273752rem);
+}

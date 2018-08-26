@@ -1,0 +1,356 @@
+
+.generateWrap{
+    /*padding-left: 20px;*/
+    box-sizing: border-box;
+}
+
+.wanshan {
+    display: table;
+    padding: 20px;;
+    background: rgba(45, 45, 45, .8);
+}
+.wanshan select{
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+.border_left {
+    width: 10%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 5px;
+}
+
+.wan_info {
+    padding-left: 20px;
+    width: 80%;
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.xinxi {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.orderbox {
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.blue_round {
+    height: 560px;
+    /*width: 28px;*/
+    background-size: 28px;
+    -webkit-animation: heightSlide 2s linear;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+}
+
+.onetab {
+    /*float: right;*/
+    width: 98%;
+    position: relative;
+    left: 40px;
+    top: 5px;
+    font-size: 14px;
+}
+
+.tabnum {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background: #36b3ca;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.tabnum i {
+    font-style: normal;
+    position: relative;
+    top: 1px;
+    left: -1px;
+}
+
+.username {
+    display: table;
+    margin-bottom: 20px;
+}
+
+.userbox {
+    margin-top: 20px;
+}
+
+.muststar {
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+    color: #36b3ca;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.iteminfo {
+    width: 85px;
+    font-size: 14px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.user_input {
+    margin-left: 8px;
+    border-radius: 16px;
+    border: none;
+    height: 31px;
+    line-height: 1px;
+    padding: 0 10px;
+    width: 234px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.user_select {
+    margin-left: 8px;
+    width: 111px;
+    height: 31px;
+    line-height: 31px;
+    border-radius: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.address {
+    clear: both;
+    width: 285px;
+    margin-left: 115px;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 1;
+    min-height: 34px;
+}
+
+.addressNone{
+    min-height: 34px;
+    opacity: 0;
+}
+
+.tiptap {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+.tiptap:hover{
+    cursor: pointer;
+}
+
+.tiptap img {
+    width: 20px;
+    margin-left: 8px;
+}
+
+.yixiangjin {
+    margin-left: 8px;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.xiadan_btn {
+    display: inline-block;
+    margin-left: 8px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background: #36b3ca;
+    border-radius: 5px;
+    border: solid 2px #36b3ca;
+    font-size: 20px;
+}
+.xiadan_btn:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.select-box{
+    position: relative;
+    display: inline-block;
+}
+.select-box .selectDown {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 10px;
+    height: 8px;
+    transform: translateY(-50%);
+}
+
+#orderInfo .commonInput {
+    font-size: 14px;
+    text-align: center;
+}
+
+#orderInfo .commonInput .mask-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+#orderInfo .mask-affirm {
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    background: #fff;
+    border-radius: 0.14rem;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 20px;
+}
+#orderInfo .mask-affirm p:nth-of-type(1){
+    font-size: 15px;
+    text-align: center;
+}
+#orderInfo .mask-affirm p:nth-of-type(2){
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#orderInfo .mask-affirm .footer-mask a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: #36b3ca;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    border: solid 2px #36b3ca;
+}
+
+#orderInfo .mask-affirm .footer-mask a:hover{
+    cursor: pointer;
+    color: #2cb3cc;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#orderInfo .close_mask {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    transform: translateX(-50%);
+}
+
+#orderInfo .usernameTip,#orderInfo .iteminfoTip{
+    position: absolute;
+    left: -8px;
+    top: -8px;
+}
+
+
+#orderInfo .tipPosition{
+    position: relative;
+}
+
+#orderInfo .username_mission, #orderInfo .iteminfo_mission{
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    z-index: 999999;
+    color: white;
+    width: 290px;
+    height: 25px;
+    line-height: 28px;
+    left: 158px;
+    text-align: center;
+    background: #27adc7;
+    border-radius: 10px;
+}
+
+#orderInfo .username_mission_idot,#orderInfo .iteminfo_mission_idot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    left: 370px;
+    background: #27adc7;
+    top: 0px;
+}
+
+#orderInfo .provinceSelect .select-value{
+    font-size: 14px;
+    z-index: 10;
+}
+
+#orderInfo .provinceSelect .select-option{
+    z-index: 9;
+}
+
+#orderInfo .citySelect .select-value{
+    font-size: 14px;
+    z-index: 10;
+}
+
+#orderInfo .citySelect .select-option{
+    z-index: 9;
+}
+
+#orderInfo .dealerSelect .select-value{
+    font-size: 14px;
+    z-index:7;
+}
+
+#orderInfo .dealerSelect .select-option{
+    z-index: 6
+}
+
+#orderInfo .errorTxt{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -10px;.
+    margin-left: 20px;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+#orderInfo .errDone{
+    opacity: 0;
+    height: 17px;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-left: 20px;
+}

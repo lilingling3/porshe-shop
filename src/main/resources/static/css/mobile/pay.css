@@ -1,0 +1,191 @@
+html, body {
+    background: black;
+    min-height: 100%;
+}
+
+.payWrap {
+    min-height: calc(100% - 3.5rem);
+}
+
+.payWrap .banner {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.payWrap .subscriptionTitle {
+    height: .169082rem;
+    padding: .402576rem 0;
+    color: white;
+    display: table;
+    width: 100%;
+    background: rgba(54, 54, 54, .8);
+    margin-top: 3.4219rem;
+}
+
+.payWrap .leftInfo {
+    width: 1.288245rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.payWrap .subscriptionTitle img {
+    width: .644122rem;
+    height: .724638rem;
+    left: .402576rem;
+    display: inline-block;
+
+}
+
+.payWrap .rightInfo {
+    display: table-cell;
+    width: 6.247987rem;
+    vertical-align: middle
+}
+
+.payWrap .rightInfo span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.payWrap .rightInfo span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+}
+
+
+
+.agreementConent .agreementHeader {
+    position: relative;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+
+.agreementConent .rightArrow {
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+    vertical-align: middle;
+}
+
+/**/
+
+.agreementConent .flowIdot {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+
+
+.agreementConent .flowLine {
+    font-size: 14px;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-size: 6px;
+    background-position: center;
+    position: relative;
+    margin-right: 20px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+.agreementConent .long {
+    width: 3.3rem;
+    margin-left: 168px;
+    display: inline-block;
+    vertical-align: middle;
+    right: .016103rem;
+}
+
+@media screen and (device-width: 414px) and (device-height: 736px) {
+    .agreementConent .long {
+        width: 4rem;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) {
+    .agreementConent .long {
+        width: 3.35rem;
+    }
+}
+
+.agreementConent {
+    background: rgba(51, 51, 51, .5);
+    padding-top: .402576rem;
+    padding-bottom: .5rem;
+}
+
+.agreementConent .payInfo {
+    color: white;
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-top: .885668rem
+}
+
+.payCompay span{
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+.payLine {
+    margin-top: 1rem;
+}
+.agreementConent .payInfo p:nth-of-type(2) {
+    padding: .241546rem 0 .1rem 1.6rem;
+}
+
+.agreementConent .payStyleWrap{
+    padding-right: 1rem;
+    margin-top: .2rem;;
+}
+
+.agreementConent .payStyleWrap li{
+    position: relative;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #e2e2e2;
+    padding-left: 10px;
+}
+
+.agreementConent .payStyleWrap li:first-child{
+    border-top: none;
+}
+
+.agreementConent .iconLeft{
+    width: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.agreementConent .iconRight{
+    width: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.agreementConent .payStyleWrap span{
+    position: absolute;
+    right: 30px;
+}
+
